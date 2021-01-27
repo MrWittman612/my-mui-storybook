@@ -7,7 +7,8 @@ export default {
   component: Slider,
   decorators: [
     (Story) => (
-      <div
+      <form
+        noValidate
         style={{
           margin: "3em",
           width: "50vw",
@@ -17,7 +18,7 @@ export default {
           justifyContent: "center",
         }}>
         <Story />
-      </div>
+      </form>
     ),
   ],
   argTypes: {

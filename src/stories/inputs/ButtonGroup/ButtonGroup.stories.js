@@ -1,30 +1,36 @@
 import React from "react";
-import { Button } from "@material-ui/core";
+import { ButtonGroup } from "@material-ui/core";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: "Inputs/Button",
-  component: Button,
+  title: "Inputs/ButtonGroup",
+  component: ButtonGroup,
   argTypes: {
-    fullWidth: {
+    disabled: {
       type: "boolean",
     },
     disableRipple: {
       type: "boolean",
     },
-    disableFocusRipple: {
-      type: "boolean",
-    },
     disableElevation: {
       type: "boolean",
     },
-    disabled: {
+    disableFocusRipple: {
+      type: "boolean",
+    },
+    fullWidth: {
       type: "boolean",
     },
     color: {
       control: {
-        type: "select",
+        type: "default",
         options: ["inherit", "primary", "secondary"],
+      },
+    },
+    orientation: {
+      control: {
+        type: "select",
+        options: ["horizontal", "vertical"],
       },
     },
     size: {
@@ -43,7 +49,7 @@ export default {
   },
 };
 
-const Template = (args) => <Button {...args}>Button</Button>;
+const Template = (args) => <ButtonGroup {...args}>Button</ButtonGroup>;
 
 export const Default = Template.bind({});
 
