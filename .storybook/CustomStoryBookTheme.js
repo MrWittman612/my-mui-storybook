@@ -3,7 +3,7 @@ import image from "../src/assets/my-mui-storybook-logo.png";
 
 export default create({
   base: "dark",
-  brandTitle: "Mr. Wittman Blog",
+  brandTitle: "My material ui storybook",
   brandUrl:
     "https://mrwittman612.github.io/my-mui-storybook/?path=/story/example-introduction--page",
   brandImage: image,
