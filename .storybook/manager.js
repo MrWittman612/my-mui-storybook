@@ -3,5 +3,6 @@ import CustomStoryBookTheme from "./CustomStoryBookTheme";
 
 addons.setConfig({
   theme: CustomStoryBookTheme,
-  panelPosition: "right",
+  panelPosition: "bottom",
+  showRoots: true,
 });
